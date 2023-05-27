@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/Iconfactory-Gundam-MSZ-006-Z-Gundam.32.ico" type="image/x-icon">
+  <title>Gundam Store</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="validacion.js"></script>
+  <script src="script.js"></script>
+</head>
+<body2>
+  <header>
+    <h1>Gundam Store</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pagina1.html">Stock</a></li>
+        <li><a href="pagina2.html">Sobre Nosotros</a></li>
+        <li><a href="pagina3.html">Haga Su Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="grid-container3">
+    
+    
+    <div class="grid-pedido">
+      <h1>Formulario de Pedido</h1>
+    <form id="pedidoForm" onsubmit="return validarFormulario()">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+      <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+      <div>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="pedido">Pedido:</label>
+        <textarea id="pedido" name="pedido" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Enviar Pedido</button>
+      </div>
+    </form>
+    </div>
+
+    <div class="grid-dolar">
+      <div><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
+    </div>
+
+    <div class="grid-item3">
+      <h2>Precio actual del Bitcoin:</h2>
+    <p id="bitcoin-price"></p>
+
+    <h2>Precio actual del Ethereum:</h2>
+  <p id="ethereum-price"></p>
+    </div>
+    
+    
+  </main>
+
+
+  
+
+  <footer>
+    <p>2023 Gundam Store. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
